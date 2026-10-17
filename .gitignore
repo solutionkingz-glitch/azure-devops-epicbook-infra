@@ -42,3 +42,13 @@ terraform.rc
 # Optional: ignore plan files saved before destroying Terraform configuration
 # Uncomment the line below if you want to ignore planout files.
 # planout
+# Extra protection for this project
+*.pem
+*.key
+epicbook_key*
+id_rsa*
+*.tfplan
+tfplan
+*.auto.tfvars
+secrets.tfvars
+.env
