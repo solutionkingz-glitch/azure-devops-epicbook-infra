@@ -1,0 +1,4 @@
+allowed_ssh_cidrs    = ["x.x.x.x/32"]
+ssh_public_key       = "ssh-rsa AAAA... epicbook-lab"
+mysql_admin_username = "epicadmin"
+# mysql_admin_password is supplied by the pipeline. Never put it in a file.
