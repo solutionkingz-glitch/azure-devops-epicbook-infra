@@ -32,7 +32,7 @@ resource "azurerm_linux_virtual_machine" "frontend" {
 
   admin_ssh_key {
     username   = var.admin_username
-    public_key = var.ssh_public_key
+    public_key = trimspace(file("${path.module}/epicbook_ssh.pub"))
   }
 
   os_disk {
@@ -82,7 +82,7 @@ resource "azurerm_linux_virtual_machine" "backend" {
 
   admin_ssh_key {
     username   = var.admin_username
-    public_key = var.ssh_public_key
+    public_key = trimspace(file("${path.module}/epicbook_ssh.pub"))
   }
 
   os_disk {
